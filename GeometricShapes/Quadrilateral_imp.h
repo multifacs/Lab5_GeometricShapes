@@ -192,6 +192,16 @@ inline ostream& Quadrilateral<T>::print(ostream& os)
 	}
 	os << ")" << endl;
 
+	os << "Point D coordinates: (";
+	for (int i = 0; i < this->GetDim(); i++)
+	{
+		if (i != this->GetDim() - 1)
+			os << this->D[i] << ", ";
+		else
+			os << this->D[i];
+	}
+	os << ")" << endl;
+
 	os << "Perimeter: " << GetPerimeter() << endl;
 	os << "Area: " << GetArea() << endl;
 	auto x = IsSquare() ? "Yes" : "No";
