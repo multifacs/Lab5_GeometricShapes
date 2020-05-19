@@ -2,7 +2,7 @@
 #include "Line.h"
 #include "Triangle.h"
 #include "Circle.h"
-#include "Quadrilateral.h"
+#include "Square.h"
 #include "Sphere.h"
 #include "Ellipse.h"
 #include "Container.h"
@@ -39,13 +39,13 @@ int main()
 	Tri.SetC(0) = 3; Tri.SetC(1) = 0;
 	cout << Tri << endl;
 
-	Quadrilateral<int> Sq(2);
+	Square<int> Sq(2);
 	Sq.SetA(0) = 0; Sq.SetA(1) = 0;
 	Sq.SetB(0) = 0; Sq.SetB(1) = 2;
 	Sq.SetC(0) = 2; Sq.SetC(1) = 2;
 	Sq.SetD(0) = 2; Sq.SetD(1) = 0;
 	cout << Sq << endl;
-	Quadrilateral<int> Sk(Sq);
+	Square<int> Sk(Sq);
 
 	Container Box;
 	Box.Add(Dot);

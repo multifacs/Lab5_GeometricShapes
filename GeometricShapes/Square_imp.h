@@ -1,5 +1,5 @@
 template<class T>
-inline Quadrilateral<T>::Quadrilateral()
+inline Square<T>::Square()
 {
 	this->SetDim() = 0;
 	this->SetA() = new T[0];
@@ -9,7 +9,7 @@ inline Quadrilateral<T>::Quadrilateral()
 }
 
 template<class T>
-inline Quadrilateral<T>::Quadrilateral(int n)
+inline Square<T>::Square(int n)
 {
 	this->SetDim() = n;
 	this->SetA() = new T[n];
@@ -26,7 +26,7 @@ inline Quadrilateral<T>::Quadrilateral(int n)
 }
 
 template<class T>
-inline Quadrilateral<T>::Quadrilateral(const Quadrilateral& q)
+inline Square<T>::Square(const Square& q)
 {
 	this->SetDim() = q.GetDim();
 	this->SetA() = new T[q.GetDim()];
@@ -43,25 +43,25 @@ inline Quadrilateral<T>::Quadrilateral(const Quadrilateral& q)
 }
 
 template<class T>
-inline Quadrilateral<T>::~Quadrilateral()
+inline Square<T>::~Square()
 {
 	delete[] D;
 }
 
 template<class T>
-inline T* Quadrilateral<T>::GetD() const
+inline T* Square<T>::GetD() const
 {
 	return D;
 }
 
 template<class T>
-inline T*& Quadrilateral<T>::SetD()
+inline T*& Square<T>::SetD()
 {
 	return D;
 }
 
 template<class T>
-inline double Quadrilateral<T>::GetPerimeter() const
+inline double Square<T>::GetPerimeter() const
 {
 	double sum = 0, temp = 0;
 	for (int i = 0; i < this->GetDim(); i++)
@@ -88,7 +88,7 @@ inline double Quadrilateral<T>::GetPerimeter() const
 }
 
 template<class T>
-inline double Quadrilateral<T>::GetArea() const
+inline double Square<T>::GetArea() const
 {
 	double p = GetPerimeter() * 0.5;
 	double temp = 0;
@@ -117,7 +117,7 @@ inline double Quadrilateral<T>::GetArea() const
 }
 
 template<class T>
-inline bool Quadrilateral<T>::IsSquare() const
+inline bool Square<T>::IsSquare() const
 {
 	double temp = 0;
 
@@ -158,7 +158,7 @@ inline bool Quadrilateral<T>::IsSquare() const
 }
 
 template<class T>
-inline ostream& Quadrilateral<T>::print(ostream& os)
+inline ostream& Square<T>::print(ostream& os)
 {
 	os << "Type: " << typeid(*this).name() << endl <<
 		"Dimensions: " << this->GetDim() << endl <<

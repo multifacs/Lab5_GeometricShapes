@@ -2,15 +2,15 @@
 #include "Triangle.h"
 
 template<class T>
-class Quadrilateral : public Triangle<T>
+class Square : public Triangle<T>
 {
 protected:
 	T* D;
 public:
-	Quadrilateral();
-	Quadrilateral(int n);
-	Quadrilateral(const Quadrilateral& q);
-	virtual ~Quadrilateral();
+	Square();
+	Square(int n);
+	Square(const Square& q);
+	virtual ~Square();
 
 	T* GetD() const;
 	T*& SetD();
@@ -22,4 +22,4 @@ public:
 	ostream& print(ostream& os) override;
 };
 
-#include "Quadrilateral_imp.h"
+#include "Square_imp.h"

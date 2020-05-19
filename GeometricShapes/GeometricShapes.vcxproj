@@ -152,8 +152,8 @@
     <ClInclude Include="Line_imp.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Point_imp.h" />
-    <ClInclude Include="Quadrilateral.h" />
-    <ClInclude Include="Quadrilateral_imp.h" />
+    <ClInclude Include="Square.h" />
+    <ClInclude Include="Square_imp.h" />
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="Sphere_imp.h" />
     <ClInclude Include="Triangle.h" />
