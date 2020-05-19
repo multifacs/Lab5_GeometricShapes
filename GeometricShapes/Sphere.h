@@ -7,7 +7,12 @@ class Sphere : public Circle<T>
 	using Circle<T>::GetArea;
 public:
 	Sphere() : Circle<T>() {}
-	Sphere(int n) : Circle<T>(n) {}
+	Sphere(int n) : Circle<T>(n)
+	{
+		if (n < 3)
+			throw "Yikes";
+
+	}
 	Sphere(const Sphere& s) : Circle<T>(s) {}
 	virtual ~Sphere() {};
 

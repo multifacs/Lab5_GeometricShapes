@@ -195,7 +195,7 @@ inline ostream& Quadrilateral<T>::print(ostream& os)
 	os << "Perimeter: " << GetPerimeter() << endl;
 	os << "Area: " << GetArea() << endl;
 	auto x = IsSquare() ? "Yes" : "No";
-	os << "Is square: " << x << endl;
+	os << "Is a square: " << x << endl;
 
 	return os;
 }

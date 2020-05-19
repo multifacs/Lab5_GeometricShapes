@@ -146,6 +146,8 @@
     <ClInclude Include="Circle_imp.h" />
     <ClInclude Include="Container.h" />
     <ClInclude Include="Container_imp.h" />
+    <ClInclude Include="Ellipse.h" />
+    <ClInclude Include="Ellipse_imp.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="Line_imp.h" />
     <ClInclude Include="Point.h" />

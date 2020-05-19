@@ -4,6 +4,7 @@
 #include "Circle.h"
 #include "Quadrilateral.h"
 #include "Sphere.h"
+#include "Ellipse.h"
 #include "Container.h"
 
 #define Add(x) Add(x, #x)
@@ -54,16 +55,21 @@ int main()
 	Box.ShowAll();
 	cout << endl;
 	Box.Show(0);
-	cout << endl;
 
 	Box.Remove(1);
 	Box.ShowAll();
 	cout << endl;
 
-	Sphere<int> Sph(2);
-	Sph.SetA(0) = 0; Sph.SetA(1) = 0;
-	Sph.SetB(0) = 5; Sph.SetB(1) = 5;
+	Sphere<int> Sph(3);
+	Sph.SetA(0) = 0; Sph.SetA(1) = 0; Sph.SetA(2) = 0;
+	Sph.SetB(0) = 5; Sph.SetB(1) = 5; Sph.SetB(2) = 0;
 	cout << Sph << endl;
+
+	Ellipse<int> El(2);
+	El.SetA(0) = 5; El.SetA(1) = 5;
+	El.SetB(0) = 2; El.SetB(1) = 2;
+	El.SetC(0) = 0; El.SetC(1) = 0;
+	cout << El << endl;
 
 	return 0;
 }
