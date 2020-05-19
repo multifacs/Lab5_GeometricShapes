@@ -17,4 +17,4 @@ public:
 	ostream& print(ostream& os);
 };
 
-#include "Circle_imp.h"
+#include "Circle_i.h"

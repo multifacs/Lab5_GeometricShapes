@@ -21,4 +21,4 @@ public:
 	ostream& print(ostream& os);
 };
 
-#include "Sphere_imp.h"
+#include "Sphere_i.h"

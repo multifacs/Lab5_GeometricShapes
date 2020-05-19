@@ -21,4 +21,4 @@ public:
 	ostream& print(ostream& os) override;
 };
 
-#include "Triangle_imp.h"
+#include "Triangle_i.h"

@@ -22,4 +22,4 @@ public:
 	ostream& print(ostream& os) override;
 };
 
-#include "Point_imp.h"
+#include "Point_i.h"

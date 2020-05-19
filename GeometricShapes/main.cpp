@@ -4,7 +4,7 @@
 #include "Circle.h"
 #include "Square.h"
 #include "Sphere.h"
-#include "Ellipse.h"
+#include "Cone.h"
 #include "Container.h"
 
 #define Add(x) Add(x, #x)
@@ -65,10 +65,10 @@ int main()
 	Sph.SetB(0) = 5; Sph.SetB(1) = 5; Sph.SetB(2) = 0;
 	cout << Sph << endl;
 
-	Ellipse<int> El(2);
-	El.SetA(0) = 5; El.SetA(1) = 5;
-	El.SetB(0) = 2; El.SetB(1) = 2;
-	El.SetC(0) = 0; El.SetC(1) = 0;
+	Cone<int> El(3);
+	El.SetA(0) = 2; El.SetA(1) = 2; El.SetA(2) = 0;
+	El.SetB(0) = 0; El.SetB(1) = 0; El.SetB(2) = 5;
+	El.SetC(0) = 0; El.SetC(1) = 0; El.SetC(2) = 0;
 	cout << El << endl;
 
 	return 0;

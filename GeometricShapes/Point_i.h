@@ -58,9 +58,7 @@ inline int Point<T>::GetDim() const
 template<class T>
 inline ostream& Point<T>::print(ostream& os)
 {
-	os << "Type: " << typeid(*this).name() << endl <<
-		"Dimensions: " << GetDim() << endl <<
-		"Point A coordinates: (";
+	os << "Dimensions: " << GetDim() << endl << "Point A coordinates: (";
 	for (int i = 0; i < GetDim(); i++)
 	{
 		if (i != GetDim() - 1)

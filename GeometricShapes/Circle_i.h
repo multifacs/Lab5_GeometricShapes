@@ -13,9 +13,7 @@ inline double Circle<T>::GetArea() const
 template<class T>
 inline ostream& Circle<T>::print(ostream& os)
 {
-	os << "Type: " << typeid(*this).name() << endl <<
-		"Dimensions: " << this->GetDim() << endl <<
-		"Point A coordinates: (";
+	os << "Dimensions: " << this->GetDim() << endl << "Point A coordinates: (";
 	for (int i = 0; i < this->GetDim(); i++)
 	{
 		if (i != this->GetDim() - 1)

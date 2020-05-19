@@ -143,21 +143,21 @@
   <ItemGroup>
     <ClInclude Include="Base.h" />
     <ClInclude Include="Circle.h" />
-    <ClInclude Include="Circle_imp.h" />
+    <ClInclude Include="Circle_i.h" />
     <ClInclude Include="Container.h" />
-    <ClInclude Include="Container_imp.h" />
-    <ClInclude Include="Ellipse.h" />
-    <ClInclude Include="Ellipse_imp.h" />
+    <ClInclude Include="Container_i.h" />
+    <ClInclude Include="Cone.h" />
+    <ClInclude Include="Cone_i.h" />
     <ClInclude Include="Line.h" />
-    <ClInclude Include="Line_imp.h" />
+    <ClInclude Include="Line_i.h" />
     <ClInclude Include="Point.h" />
-    <ClInclude Include="Point_imp.h" />
+    <ClInclude Include="Point_i.h" />
     <ClInclude Include="Square.h" />
-    <ClInclude Include="Square_imp.h" />
+    <ClInclude Include="Square_i.h" />
     <ClInclude Include="Sphere.h" />
-    <ClInclude Include="Sphere_imp.h" />
+    <ClInclude Include="Sphere_i.h" />
     <ClInclude Include="Triangle.h" />
-    <ClInclude Include="Triangle_imp.h" />
+    <ClInclude Include="Triangle_i.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

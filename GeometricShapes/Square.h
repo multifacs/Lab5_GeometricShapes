@@ -22,4 +22,4 @@ public:
 	ostream& print(ostream& os) override;
 };
 
-#include "Square_imp.h"
+#include "Square_i.h"

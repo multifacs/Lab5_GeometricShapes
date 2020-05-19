@@ -5,8 +5,6 @@
 #include <cmath>
 #include <math.h>
 
-#include <typeinfo> 
-
 using namespace std;
 class Base
 {

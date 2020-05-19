@@ -21,4 +21,4 @@ public:
 	ostream& print(ostream& os) override;
 };
 
-#include "Line_imp.h"
+#include "Line_i.h"
