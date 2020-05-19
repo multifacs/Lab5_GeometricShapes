@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Implementations">
-      <UniqueIdentifier>{c0590aae-fba1-475d-a5c3-6f774ab4dd2e}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -51,28 +48,28 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Circle_i.h">
-      <Filter>Implementations</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Container_i.h">
-      <Filter>Implementations</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Cone_i.h">
-      <Filter>Implementations</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Line_i.h">
-      <Filter>Implementations</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Point_i.h">
-      <Filter>Implementations</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Sphere_i.h">
-      <Filter>Implementations</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Square_i.h">
-      <Filter>Implementations</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Triangle_i.h">
-      <Filter>Implementations</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
