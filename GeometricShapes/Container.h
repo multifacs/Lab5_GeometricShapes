@@ -16,11 +16,9 @@ public:
 	virtual ~Container();
 
 	template <class A>
-	void Add(A& obj, string name);
-
+	void Add(A& elem, string name);
 	void Remove(int r);
 	void ShowAll();
-
 	void Show(int i);
 
 	Base* operator[](const int i);
