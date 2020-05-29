@@ -1,3 +1,4 @@
+#include "Point.h"
 
 template<class T>
 inline Point<T>::Point()
@@ -13,6 +14,15 @@ inline Point<T>::Point(int n)
 	A = new T[n];
 	for (int i = 0; i < n; i++)
 		A[i] = 0;
+}
+
+template<class T>
+inline Point<T>::Point(int n, const vector<T>& list)
+{
+	dim = n;
+	A = new T[n];
+	for (int i = 0; i < n; i++)
+		A[i] = list[i];
 }
 
 template<class T>

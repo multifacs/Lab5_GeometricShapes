@@ -1,3 +1,4 @@
+#include "Line.h"
 
 template<class T>
 inline Line<T>::Line()
@@ -10,13 +11,26 @@ inline Line<T>::Line()
 template<class T>
 inline Line<T>::Line(int n)
 {
-	this->SetDim() = n;
-	this->SetA() = new T[n];
+	this->dim = n;
+	this->A = new T[n];
 	B = new T[n];
 	for (int i = 0; i < n; i++)
 	{
-		this->SetA()[i] = 0;
+		this->A[i] = 0;
 		B[i] = 0;
+	}
+}
+
+template<class T>
+inline Line<T>::Line(int n, const vector<T>& list)
+{
+	this->dim = n;
+	this->A = new T[n];
+	B = new T[n];
+	for (int i = 0; i < n; i++)
+	{
+		this->A[i] = list[i];
+		B[i] = list[i+n];
 	}
 }
 

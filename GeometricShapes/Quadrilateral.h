@@ -9,6 +9,7 @@ protected:
 public:
 	Quadrilateral();
 	Quadrilateral(int n);
+	Quadrilateral(int n, const vector<T>& list);
 	Quadrilateral(const Quadrilateral& q);
 	virtual ~Quadrilateral();
 

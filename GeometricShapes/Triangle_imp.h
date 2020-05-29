@@ -1,3 +1,4 @@
+#include "Triangle.h"
 
 template<class T>
 inline Triangle<T>::Triangle()
@@ -20,6 +21,21 @@ inline Triangle<T>::Triangle(int n)
 		this->SetA()[i] = 0;
 		this->SetB()[i] = 0;
 		C[i] = 0;
+	}
+}
+
+template<class T>
+inline Triangle<T>::Triangle(int n, const vector<T>& list)
+{
+	this->dim = n;
+	this->A = new T[n];
+	this->B = new T[n];
+	C = new T[n];
+	for (int i = 0; i < n; i++)
+	{
+		this->A[i] = list[i];
+		this->B[i] = list[i + n];
+		C[i] = list[i + n*2];
 	}
 }
 

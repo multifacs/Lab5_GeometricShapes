@@ -11,7 +11,11 @@ public:
 	{
 		if (n < 3)
 			throw "Yikes";
-
+	}
+	Sphere(int n, const vector<T>& list) : Circle<T>(n, list)
+	{
+		if (n < 3)
+			throw "Yikes";
 	}
 	Sphere(const Sphere& s) : Circle<T>(s) {}
 	virtual ~Sphere() {};

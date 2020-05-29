@@ -7,6 +7,7 @@ class Ellipse : public Triangle<T>
 public:
 	Ellipse() : Triangle<T>() {}
 	Ellipse(int n) : Triangle<T>(n) {}
+	Ellipse(int n, const vector<T>& list) : Triangle<T>(n, list) {}
 	Ellipse(const Ellipse& e) : Triangle<T>(e) {}
 	virtual ~Ellipse() {};
 

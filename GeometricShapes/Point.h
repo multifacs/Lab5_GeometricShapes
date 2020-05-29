@@ -10,6 +10,7 @@ protected:
 public:
 	Point();
 	Point(int n);
+	Point(int n, const vector<T>& list);
 	Point(const Point& p);
 	virtual ~Point();
 

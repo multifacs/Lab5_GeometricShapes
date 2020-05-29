@@ -1,3 +1,4 @@
+#include "Quadrilateral.h"
 template<class T>
 inline Quadrilateral<T>::Quadrilateral()
 {
@@ -22,6 +23,23 @@ inline Quadrilateral<T>::Quadrilateral(int n)
 		this->SetB()[i] = 0;
 		this->SetC()[i] = 0;
 		D[i] = 0;
+	}
+}
+
+template<class T>
+inline Quadrilateral<T>::Quadrilateral(int n, const vector<T>& list)
+{
+	this->dim = n;
+	this->A = new T[n];
+	this->B = new T[n];
+	this->C = new T[n];
+	D = new T[n];
+	for (int i = 0; i < n; i++)
+	{
+		this->A[i] = list[i];
+		this->B[i] = list[i + n];
+		this->C[i] = list[i + n*2];
+		D[i] = list[i + n*3];
 	}
 }
 

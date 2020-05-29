@@ -21,6 +21,25 @@ public:
 	void ShowAll();
 	void Show(int i);
 
+	template<class T>
+	void CallPoint(int dims);
+	template<class T>
+	void CallLine(int dims);
+	template<class T>
+	void CallTriangle(int dims);
+	template<class T>
+	void CallQuadrilateral(int dims);
+	template<class T>
+	void CallCircle(int dims);
+	template<class T>
+	void CallSphere(int dims);
+	template<class T>
+	void CallEllipse(int dims);
+
+	void Create(int shape_type, int coord_type, int dims, string name);
+
+	int GetSize();
+
 	Base* operator[](const int i);
 };
 

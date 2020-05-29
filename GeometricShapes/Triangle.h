@@ -9,7 +9,8 @@ protected:
 public:
 	Triangle();
 	Triangle(int n);
-	Triangle(const Triangle& t);
+	Triangle(int n, const vector<T>& list);
+	Triangle(const Triangle& t); 
 	virtual ~Triangle();
 
 	virtual double GetPerimeter() const;

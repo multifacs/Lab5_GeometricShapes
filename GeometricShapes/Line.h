@@ -9,7 +9,9 @@ protected:
 public:
 	Line();
 	Line(int n);
+	Line(int n, const vector<T>& list);
 	Line(const Line& l);
+	Line(Point<T>&) {};
 	virtual ~Line();
 
 	double GetLength() const;

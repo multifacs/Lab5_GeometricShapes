@@ -8,6 +8,7 @@ class Circle : public Line<T>
 public:
 	Circle() : Line<T>() {}
 	Circle(int n) : Line<T>(n) {}
+	Circle(int n, const vector<T>& list) : Line<T>(n, list) {}
 	Circle(const Circle& c) : Line<T>(c) {}
 	virtual ~Circle() {};
 
